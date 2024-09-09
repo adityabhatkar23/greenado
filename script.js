@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const navDialog = document.getElementById("navDialog")
 
 
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   
-=======
 document.addEventListener("DOMContentLoaded", function () {
   const productImages = [
     "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -42,4 +40,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
->>>>>>> 9b5b25dea64cba1df6aecf15611ed8fd6f8fb9f2
