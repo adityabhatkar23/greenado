@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./src/stylesheets/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/src/fonts/remixicon.css" />
+</head>
+
+<body class="body-bg overflow-x-hidden">
+  <nav class="nav  md:px-44">
+    <h1 class="logo">GREENADO</h1>
+    <div class="links">
+      <a href="">Licences</a>
+      <a href="">Marketplace</a>
+      <a href="" class="contact">Contact US</a>
+    </div>
+    <button class="md:hidden" onclick="handleMenu()">
+      <i class="ri-menu-line text-xl"></i>
+    </button>
+
+    <div id="navDialog" class="navDialog hidden">
+      <div class="nav-bar">
+        <h1 class="logo">GREENADO</h1>
+        <button class="md:hidden" onclick="handleMenu()">
+          <i class="ri-close-fill text-xl"></i>
+        </button>
+      </div>
+
+      <div class="links2">
+        <a href="">Licences</a>
+        <a href="">Marketplace</a>
+        <a href="" class="contact">Contact US</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="relative">
+    <section
+      class="px-10 py-4 md:px-44 md:py-4 gap-2 grid grid-cols-1 md:grid-rows-custom md:grid-cols-custom overflow-x-hidden md:max-h-[40rem]">
+      <div class="pri-col rounded-3xl p-6 flex flex-col items-start md:gap-24 md:col-span-1 md:row-span-2">
+        <div
+          class="rounded-full max-w-[20rem] max-h-[12rem] flex-1 overflow-hidden self-end my-4 mb-8 md:mr-8 relative">
+          <div class="h-20 w-20 bg-white rounded-full center">
+            <i class="ri-play-fill center text-3xl"></i>
+          </div>
+          <video src="https://videos.pexels.com/video-files/1705117/1705117-hd_1280_720_25fps.mp4" autoplay muted loop
+            class="w-full h-full object-cover">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="flex-1">
+          <h1 class="text-3xl md:text-5xl md:tracking-wide">
+            YOUR EXPERT <br />
+            IN THE FIELD OF <br />
+            ECO DEVLOPMENT
+          </h1>
+          <button class="mt-4 px-6 py-2 bg-white text-black text-xs rounded-full flex items-center gap-2 text-center">
+            Discover Advantages
+            <i class="ri-arrow-right-up-line text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="green-light rounded-3xl p-4 flex flex-col justify-evenly overflow-x-hidden relative">
+        <h2 class="text-xs font-light bg-[#0000002c] w-fit rounded-full px-4 py-1.5 text-white">
+          ECO Marketplace
+        </h2>
+        <h3 class="md:text-2xl text-xl my-2 self-end">
+          Find and sell ECO <br />
+          Food Easily
+        </h3>
+
+        <div class="overflow-hidden w-full mb-8">
+          <div class="flex gap-4 pr-4 w-[300%] animate-marquee" style="--marquee-duration: 5000ms">
+            <div class="flex flex-1 gap-4 h-full">
+              <div class="img product">
+                <img src="" alt="Product 1" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 2" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 3" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 4" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 5" />
+              </div>
+            </div>
+            <div class="flex flex-1 gap-4 h-full">
+              <div class="img product">
+                <img src="" alt="Product 1" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 2" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 3" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 4" />
+              </div>
+              <div class="img product">
+                <img src="" alt="Product 5" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="bg-white rounded-full h-12 w-12 self-end absolute bottom-2 right-2">
+          <i class="ri-arrow-right-up-line"></i>
+        </button>
+      </div>
+
+      <div class="rounded-3xl text-xl md:text-2xl font-light green-dark p-8 text-white relative">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+          neque!
+        </p>
+        <button class="bg-white rounded-full h-12 w-12 self-end absolute bottom-2 right-2">
+          <i class="ri-arrow-right-up-line text-black text-base"></i>
+        </button>
+      </div>
+    </section>
+    <section class="px-10 py-6 md:px-44 overflow-x-hidden">
+      <h2 class="text-sm font-bold green-light px-3 py-1 mb-6 w-fit rounded-full">
+        2/Advantages
+      </h2>
+      <h1 class="w-fit text-2xl md:text-5xl leading-normal">
+        Our offers suggest compaines <br />
+        unbeatable advantages <br />
+        in the area of sustainability <br />
+        and climate protection
+      </h1>
+    </section>
+    <section class="px-10 py-6 grid grid-cols-1 gap-4 md:px-44 md:grid-cols-9 md:grid-rows-6">
+      <div class="bg-white md:col-span-4 md:row-span-3 rounded-3xl p-5">
+        <div class="flex items-start gap-2 md:gap-8 flex-col md:flex-row ">
+          <div class="avatars flex ">
+            <img
+              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Avatar 1" class="avatar w-12 h-12 -mr-2 rounded-full" />
+            <img
+              src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Avatar 2" class="avatar w-12 h-12 -mr-2 rounded-full" />
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Avatar 3" class="avatar w-12 h-12 -mr-2 rounded-full" />
+
+            <i
+              class="ri-leaf-line text-white leaf w-12 h-12 -mr-2 rounded-full bg-black flex items-center justify-center">
+            </i>
+
+          </div>
+
+          <p class="text-black-600 text-sm font-normal">
+            Increase the trust <br />of your customers
+          </p>
+
+        </div>
+
+        <h1 class="font-semibold text-2xl md:mt-10 py-4">
+          Strengthen your brand by simpliy communicating your sustainability
+          secure competitive advantages
+        </h1>
+      </div>
+           
+      <div class="green-light md:col-span-2 md:row-span-3 md:col-start-1 md:row-start-4 p-5 rounded-3xl">
+        <img src="./src/images/lig.png" class="h-24 w-24 transform -scale-x-100" alt="" />
+        <h1 class="font-light text-3xl mt-6">Sustainable procurement</h1>
+      </div>
+       
+      <div class="bg-white md:col-span-4 md:row-span-3 md:col-start-3 md:row-start-4 p-5 rounded-3xl flex flex-col justify-between gap-4">
+        <div class="flex flex-wrap gap-2">
+          <p class="bg-gray-200 text-xs font-bold rounded-full px-3 py-2">
+            Foundout your CO2 footprint
+          </p>
+          <p class="bg-gray-200 text-xs font-bold rounded-full px-3 py-2">
+            Use CO2 calculation concept
+          </p>
+          <p class="bg-gray-200 text-xs font-bold rounded-full px-3 py-2">
+            Compare CO2 footprint
+          </p>
+          <p class="bg-gray-200 text-xs font-bold rounded-full px-3 py-2">
+            Strengthen brand with result
+          </p>
+        </div>
+
+        <h1 class="text-3xl font-medium ">Make effort measurable</h1>
+      </div>
+      
+      <div class=" md:col-span-2 md:row-span-3 md:col-start-5 md:row-start-1 rounded-3xl overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1466446230056-1fc585e55d7d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="h-full w-full" alt="" />
+      </div>
+      
+      <div class="pri-col md:col-span-3 md:row-span-6 md:col-start-7 md:row-start-1 rounded-3xl flex flex-col p-5 justify-between">
+        <img src="./src/images/leaf0.png" alt="" class="h-36 w-36 md:h-44 md:w-44 transform -scale-x-100 -scale-y-100 rotate-45 self-end">
+        <h1 class="font-medium text-3xl">
+          Are you obliged to drawup a climate balance? We provide data for this
+        </h1>
+      </div> 
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
